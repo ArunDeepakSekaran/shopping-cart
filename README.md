@@ -25,3 +25,12 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Login Component
+
+Basic login system, allowing users to enter a username and password to authenticate and access the application. The login process includes a username/password validation, password visibility toggle, and error handling for invalid login attempts. Successful login sets session data and redirects the user to the products page.
+
+username - scart
+password - scart123@
+
+## 
