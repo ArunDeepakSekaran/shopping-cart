@@ -1,0 +1,39 @@
+<div class="center-wrapper">
+    <div class="login-container">
+        <h2>Login</h2>
+        <form (ngSubmit)="onLogin()" #loginForm="ngForm">
+            <div style="display: flex;align-items: center;gap: 10px;">
+                <label for="username">Username:</label>
+                <input
+                type="text"
+                id="username"
+                name="username"
+                class="form-control"
+                [(ngModel)]="username"
+                required
+                />
+            </div>
+        
+            <div class="password-container" style="margin-top: 1rem;">
+                <label for="password">Password:</label>
+                <input
+                [type]="passwordVisible ? 'text' : 'password'"
+                id="password"
+                name="password"
+                class="form-control"
+                [(ngModel)]="password"
+                required
+                />
+
+                <mat-icon style="cursor:pointer" (click)="toggle()">{{p_icon}}</mat-icon>
+
+            </div>
+        
+            <div style="margin-top: 1rem;">
+                <button type="submit" class="btn btn-primary" [disabled]="!loginForm.valid">Login</button>
+            </div>
+        </form>
+        <p *ngIf="errorMessage" class="error">{{ errorMessage }}</p>
+    </div>
+</div>
+  

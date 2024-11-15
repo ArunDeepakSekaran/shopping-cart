@@ -1,0 +1,38 @@
+
+
+  <div class="cart-container">
+  
+
+  <div class="header">
+    <h1>Cart</h1> 
+
+    <img src="assets/right-from-bracket-solid.svg" (click)="logout()" title="Logout" style="cursor: pointer;width: 2.7rem;">
+  </div>
+
+  <!-- Display cart items -->
+  <div *ngFor="let item of cartItems" class="cart-item">
+    <img [src]="item.product.imageUrl" alt="{{ item.product.name }}" class="product-image">
+    <div class="product-details">
+      <h3>{{ item.product.name }}</h3>
+      <p>{{ item.product.description }}</p>
+      <p>Price: ${{ item.product.price }}</p>
+      <p>Quantity:
+        <input type="number" [(ngModel)]="item.quantity" (ngModelChange)="updateQuantity(item)">
+      </p>
+      <p>Subtotal: ${{ item.product.price * item.quantity }}</p>
+    </div>
+    <button class="logout-button" (click)="removeFromCart(item.product.id)">Remove</button>
+  </div>
+
+  <!-- Total Price -->
+  <div class="total-price">
+    <p>Total Price: ${{ getTotalPrice() }}</p>
+  </div>
+
+    <div class="header">
+        <button (click)="confirmOrder()" class="confirm-order">Confirm Order</button>
+
+        <button class="btn btn-primary" (click)="returnToProductPage()">Return to Product List</button>
+    </div>
+
+</div>

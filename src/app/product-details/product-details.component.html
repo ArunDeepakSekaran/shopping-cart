@@ -1,0 +1,14 @@
+
+<div class="product-details-container">
+    <h1>Product Details</h1>
+    
+    <div *ngIf="product">
+      <h2>{{ product.name }}</h2>
+      <img [src]="product.imageUrl" alt="{{ product.name }}" class="product-image" />
+      <p><strong>Price:</strong> ₹{{ product.price }}</p>
+      <p><strong>Description:</strong> {{ sampleDescription }}</p>
+    </div>
+    
+    <button (click)="returnToProductPage()">Return to Product List</button>
+  </div>
+  

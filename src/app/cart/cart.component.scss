@@ -1,0 +1,147 @@
+.cart-container {
+    width: 80%;
+    margin: 20px auto;
+  }
+  
+  .cart-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+  
+  .product-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
+  
+  .product-details {
+    flex: 1;
+    margin-left: 20px;
+  }
+  
+  .total-price {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  .confirm-order {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .confirm-order:hover {
+    background-color: #218838;
+  }
+  
+
+  .cart-container {
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+  }
+  
+  .product-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 20px;
+  }
+  
+  .product-details {
+    flex: 1;
+  }
+  
+  .product-details h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .product-details p {
+    margin: 5px 0;
+  }
+  
+  .total-price {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    text-align: right;
+  }
+  
+  
+  button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  .logout-button {
+    background-color: #f44336; /* Red color for logout */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    display: block; /* To make it appear below the title */
+    margin-left: auto;
+    // margin-right: auto;
+  }
+  
+  .logout-button:hover {
+    background-color: #d32f2f; /* Darker red on hover */
+  }
+  
+    /* Header styling */
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .header h1 {
+        font-size: 2rem;
+        color: #333;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+      background-color: #f8f8f8;
+      border-radius: 5px;
+      margin-bottom: 1.5rem;
+    
+      h1 {
+        font-size: 1.5rem;
+        margin: 0;
+      }
+    
+      img {
+        cursor: pointer;
+        width: 2.5rem;
+      }
+    }
