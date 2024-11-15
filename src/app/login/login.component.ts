@@ -18,8 +18,8 @@ export class LoginComponent {
   constructor(private router: Router) {}
 
   onLogin() {
-    const validUsername = 'arun';
-    const validPassword = 'shopcart123@';
+    const validUsername = 'scart';
+    const validPassword = 'scart123@';
 
     if (this.username == validUsername && this.password == validPassword) {
       sessionStorage.setItem('isLoggedIn', 'true');
